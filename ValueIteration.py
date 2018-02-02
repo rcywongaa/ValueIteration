@@ -106,7 +106,7 @@ def runValueIteration():
 
     fig, (p1, p2) = plt.subplots(1, 2)
     p1.set_title("Cost")
-    cost_plot = p1.imshow(cost_grid.grid, cmap='rainbow', vmin = 0, vmax = 100, origin='lower')
+    cost_plot = p1.imshow(cost_grid.grid, cmap='inferno_r', vmin = 0, vmax = 100, origin='lower')
     p2.set_title("Controller")
     controller_plot = p2.imshow(controller_grid.grid, cmap='Set1', vmin = -1, vmax = 1, origin='lower', interpolation='nearest')
 
